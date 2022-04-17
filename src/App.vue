@@ -69,9 +69,7 @@ body{
 
 .header{
     box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem 2rem;
+    margin: 1.5rem 2rem;
 }
 
 .header-link{

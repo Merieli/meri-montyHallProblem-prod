@@ -3,7 +3,7 @@
         <div class="door-flap" :class="{ spotlight: chosen && !showContent }" >
             <div type="button" v-if="!showContent" class="door-leaf" @click="chosen = !chosen">
                 <p class="door-number">{{ number }}</p>
-                <button class="door-handle" @click="showContent = true"></button> <!-- .stop irá parar a propagação do evento clique-->
+                <button class="door-handle" @click="showContent = true"></button>
             </div>
         </div>
         <GiftPart v-if="doorawarded && showContent" />
@@ -33,18 +33,12 @@ export default {
 </script>
 
 <style scoped>
-    :root{
-        --wood-flap: #6e3c3e;
-        
-    }
-
     .door{
         background-color: rgba(36, 34, 34, 0.404);
         position: relative;
-        width: 130px;
+        margin: 0 1rem 2rem 1rem;
         height: 220px;
-        margin-bottom: 2rem;
-        margin-right: 1rem;
+        width: 130px;
     }
 
     .door-flap{
